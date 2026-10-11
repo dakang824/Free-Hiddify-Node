@@ -91,7 +91,8 @@ export GIT_ASKPASS=/usr/bin/true
 
 if git push origin main >> "$LOG" 2>&1; then
   log "推送成功"
-  log "订阅地址: https://cdn.jsdelivr.net/gh/dakang824/Free-Hiddify-Node@main/out/singbox-verified.json"
+  log "订阅地址(fastly 端点，主域被 reset 时用这个):"
+  log "  https://fastly.jsdelivr.net/gh/dakang824/Free-Hiddify-Node@main/out/singbox-verified.json"
 else
   log "推送失败。排查顺序："
   log "  1) SSH：确认公钥已加入 GitHub → Settings → SSH keys"

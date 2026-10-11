@@ -4,13 +4,23 @@
 
 ## 订阅地址
 
+**推荐（fastly 端点，实测最稳）：**
 ```
-https://cdn.jsdelivr.net/gh/dakang824/Free-Hiddify-Node@main/out/singbox-verified.json
+https://fastly.jsdelivr.net/gh/dakang824/Free-Hiddify-Node@main/out/singbox-verified.json
 ```
 
-> 刚 push 后 jsDelivr 有约 5 分钟缓存延迟，属正常现象。
->
-> 请务必使用 jsDelivr 域名，不要用 `raw.githubusercontent.com` —— 后者在大陆被墙。
+**备用端点（任选其一，内容完全相同）：**
+
+| 端点 | 状态 |
+|---|---|
+| `https://fastly.jsdelivr.net/gh/dakang824/Free-Hiddify-Node@main/out/singbox-verified.json` | 推荐 |
+| `https://testingcf.jsdelivr.net/gh/dakang824/Free-Hiddify-Node@main/out/singbox-verified.json` | 可用 |
+| `https://jsdelivr.b-cdn.net/gh/dakang824/Free-Hiddify-Node@main/out/singbox-verified.json` | 可用 |
+| `https://cdn.jsdelivr.net/gh/dakang824/Free-Hiddify-Node@main/out/singbox-verified.json` | **本机被 reset，勿用** |
+
+> ⚠️ 不要使用 `raw.githubusercontent.com`，该域名在大陆被墙。
+> ⚠️ 本机实测 `cdn.jsdelivr.net` 主域出现 `Connection reset by peer`，故推荐 fastly 端点。
+> ⚠️ push 后 jsDelivr 有约 5 分钟缓存延迟。
 
 ## 客户端导入
 
