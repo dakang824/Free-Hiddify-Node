@@ -47,17 +47,37 @@ Hiddify：首页 → 配置 → 右上角「+」→ 从剪贴板导入，粘贴�
 
 ## 自动刷新机制
 
-本地 `~/WorkBuddy/2026-10-10-22-31-28/sub-repo/refresh.sh` 由 launchd 每 12 小时执行：
+本地 `refresh.sh` 由 launchd 每 12 小时执行：
 
-1. 经 jsDelivr 拉取上游配置（带防反爬校验）
-2. 全量实测节点连通性
-3. 生成仅含可用节点的配置
-4. Git 提交并推送
+1. **多源抓取**（11 个公开源，自动经jsDelivr 拉取，绕开 GitHub 封锁）
+2. **格式统一**（singbox-json / clash-yaml / v2ray-base64 / v2ray-plain 四种格式自动解析）
+3. **全量实测**（DNS 串行解析 + TCP 并发连接验证）
+4. **生成配置**（仅保留实测可用节点，按延迟排序）
+5. **同步到 Hiddify + Git 推送**
 
-日志：`~/WorkBuddy/2026-10-10-22-31-28/sub-repo/refresh.log`
+### 多源 vs 单源实测对比
 
-手动触发：
+| 策略 | 唯一节点 | 可用 | 可用率 |
+|---|---|---|---|
+| 单源（Au1rxx） | 1,882 | 34 | **1.8%** |
+| **多源聚合（11 源）** | 4,676 | 1,877 | **40.2%** |
 
-```bash
-bash ~/WorkBuddy/2026-10-10-22-31-28/sub-repo/refresh.sh
-```
+多源策略使可用率提升约 22 倍。
+
+### 各源贡献
+
+| 源 | 解析节点数 |
+|---|---|
+| barry-far | 7,608 |
+| ishalumi | 2,673 |
+| Au1rxx | 1,818 |
+| xingchaoet | 1,756 |
+| peasoft | 544 |
+| free-nodes | 593 |
+| Ruk1ng001 | 475 |
+| ts-sf | 201 |
+| free18 | 215 |
+| wanghaisheng | 141 |
+| snakem982 | 59 |
+
+日志：`refresh.log` ｜ 手动触发：`bash refresh.sh`
