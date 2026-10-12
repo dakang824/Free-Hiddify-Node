@@ -1,0 +1,105 @@
+name: 定时抓取免费节点
+
+# ============================================================
+# ⚠️ 重要：本workflow 只做「抓取 + 格式转换」，不做连通性实测
+#
+# 原因：GitHub Actions runner 位于美国机房，它实测通过的节点
+#      对中国大陆用户未必可用（实测本地可用节点中约 17% 是
+#      Cloudflare/美欧机房 IP，在美区判定可用但国内常不通）。
+#
+# 因此本仓库的「实测筛选」必须由本地任务执行：
+#      本地 launchd 每天 12:00 → refresh.sh → 推送到本仓库
+#
+# 本 workflow 的作用是「兜底 + 补充」：
+#   1. 保证仓库即使本地任务未执行也有内容更新
+#   2. 提供国内不可用时的备用查看渠道
+# ============================================================
+
+on:
+  schedule:
+    # GitHub Actions cron 用 UTC 时间
+    # UTC 04:00 = 北京时间 12:00（与本地任务同步）
+    - cron: '0 4 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+permissions:
+  contents: write
+
+concurrency:
+  group: node-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pyyaml --quiet
+
+      - name: Fetch multi-source nodes
+        run: |
+          python fetch-multi.py || echo "::warning::抓取阶段有源失败，继续处理"
+
+      - name: Check result
+        id: check
+        run: |
+          if [ ! -f /tmp/union_alive.json ]; then
+            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "::error::未获取到任何节点，跳过发布"
+            exit 0
+          fi
+          CNT=$(python -c "import json;print(len(json.load(open('/tmp/union_alive.json'))))")
+          echo "count=$CNT" >> $GITHUB_OUTPUT
+          echo "exists=true" >> $GITHUB_OUTPUT
+          echo "抓到 $CNT 个节点"
+
+      - name: Generate config
+        if: steps.check.outputs.exists == 'true'
+        run: python gen-config.py
+
+      - name: Archive result
+        if: steps.check.outputs.exists == 'true'
+        run: |
+          mkdir -p artifacts
+          cp out/singbox-verified.json artifacts/ 2>/dev/null || true
+          cp out/NODES.md artifacts/ 2>/dev/null || true
+
+      - name: Commit
+        if: steps.check.outputs.exists == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A out/ artifacts/ 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "内容无变化，跳过提交"
+          else
+            git commit -m "chore(Actions): 抓取节点 $(date -u '+%Y-%m-%d %H:%M UTC') — 美区视角，未做国内实测"
+            git push
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### 本次抓取结果"
+            echo ""
+            echo "- 时间 (UTC): $(date -u '+%Y-%m-%d %H:%M')"
+            if [ "${{ steps.check.outputs.exists }}" = "true" ]; then
+              echo "- 节点数: ${{ steps.check.outputs.count }}"
+            else
+              echo "- 状态: 抓取失败"
+            fi
+            echo ""
+            echo "> ⚠️ 以上节点由美国机房 runner 抓取，**未针对中国大陆网络做实测**。"
+            echo "> 本地实测版本请看 main 分支最后一次 zhuanz-sub-bot 的提交。"
+          } >> $GITHUB_STEP_SUMMARY

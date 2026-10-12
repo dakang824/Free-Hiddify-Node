@@ -81,3 +81,47 @@ Hiddify：首页 → 配置 → 右上角「+」→ 从剪贴板导入，粘贴�
 | snakem982 | 59 |
 
 日志：`refresh.log` ｜ 手动触发：`bash refresh.sh`
+---
+
+## 双重定时机制
+
+本仓库同时使用两套定时机制，各司其职：
+
+### 1. 本地 launchd（主力，负责实测）
+
+- **频率**：每天 12:00（本地时间）
+- **脚本**：`refresh.sh`
+- **职责**：11 源抓取 → **在中国大陆出口做 TCP 实测筛选** → 生成配置 → 推送
+- **意义**：这是唯一可信的可用性依据
+
+```bash
+# 查看状态
+launchctl print gui/$(id -u)/com.zhuanz.hiddify.nodes | grep -E "state|runs"
+# 立即手动执行
+launchctl start gui/$(id -u)/com.zhuanz.hiddify.nodes
+```
+
+### 2. GitHub Actions（兜底，负责抓取）
+
+- **文件**：`.github/workflows/auto-refresh.yml`
+- **频率**：每天 12:00（`cron: '0 4 * * *'` UTC = 北京时间 12:00）
+- **职责**：抓取并发布，但**不做连通性实测**
+
+### ⚠️ 为什么 Actions 不能替代本地实测
+
+GitHub Actions 的 runner 位于**美国机房**。它实测通过的节点，对中国大陆用户未必可用。
+
+实测数据：本机（大陆出口）筛出的可用节点中，约 **17% 是 Cloudflare / 美欧机房 IP**（172.64-172.67、104.16-104.31 等）。这类节点在美区 runner 上会被判定为"可用"，但在国内经常连不通。
+
+**因此本仓库的可用节点以本地实测结果为准。** 查看 commit 历史时，认准提交者：
+
+- `zhuanz-sub-bot` → **本地实测，可信**
+- `github-actions[bot]` → 美区视角，仅供参考
+
+### 三种运行模式对照
+
+| 场景 | 建议 |
+|---|---|
+| 电脑开机且12:00 醒着 | 本地 launchd 会自动跑，效果最佳 |
+| 电脑关机/合盖 | Actions 兜底更新，但节点未经国内实测 |
+| 想立即更新 | `launchctl start gui/$(id -u)/com.zhuanz.hiddify.nodes` |
