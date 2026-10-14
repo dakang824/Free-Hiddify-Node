@@ -1,6 +1,6 @@
 # 可用节点清单
-> 自动生成 2026-10-14 12:06
-> 多源聚合 11 个公开源，实测可用 1788 个（38.2%）
+> 自动生成 2026-10-14 14:06
+> 多源聚合 11 个公开源，实测可用 1794 个（38.4%）
 
 ## 各源贡献
 
@@ -22,42 +22,42 @@
 
 | 协议 | 数量 |
 |---|---|
-| vless | 1209 |
-| http | 343 |
-| trojan | 147 |
-| vmess | 35 |
-| shadowsocks | 24 |
-| socks | 20 |
+| vless | 1204 |
+| http | 353 |
+| trojan | 146 |
+| vmess | 34 |
+| socks | 25 |
+| shadowsocks | 22 |
 | hysteria2 | 7 |
 | anytls | 2 |
 | socks5 | 1 |
 
 ## 延迟分位
 
-- 中位数: 230 ms
-- p90: 302 ms
+- 中位数: 231 ms
+- p90: 318 ms
 
 ## 最快 20 个
 
 | # | 协议 | 服务器 | 端口 | 延迟 |
 |---|---|---|---|---|
-| 1 | socks | 36.155.23.163 | 10808 | 12 ms |
-| 2 | vmess | 112.132.215.108 | 50002 | 19 ms |
-| 3 | vless | 42.236.73.72 | 443 | 21 ms |
-| 4 | http | 119.188.131.55 | 17981 | 25 ms |
-| 5 | vmess | sbgfgov.vip7.wogacnmnagfwgov.com | 11207 | 30 ms |
-| 6 | vmess | sbgfgov.vip18.wogacnmnagfwgov.com | 11218 | 31 ms |
-| 7 | http | 120.232.115.170 | 17981 | 32 ms |
-| 8 | socks | 123.58.219.171 | 10808 | 34 ms |
-| 9 | socks | 172.247.27.29 | 11080 | 34 ms |
-| 10 | vmess | goldcnmltyljgfwgov.vip64.wogcnmnnagfwgov.com | 11264 | 34 ms |
-| 11 | vmess | 120.48.133.162 | 10086 | 35 ms |
-| 12 | vmess | sbgfgov.vip5.wogacnmnagfwgov.com | 11205 | 35 ms |
-| 13 | vmess | fkvvg1cqrmv9qlcc.v.3dns.vip | 443 | 36 ms |
-| 14 | socks | 47.242.19.215 | 8899 | 37 ms |
-| 15 | vless | 14.137.229.93 | 10000 | 37 ms |
-| 16 | vless | 47.74.3.200 | 443 | 38 ms |
-| 17 | http | fan.587475.xyz | 443 | 39 ms |
-| 18 | vmess | kBONDXW9liFCi4h4.v.3dns.vip | 443 | 44 ms |
-| 19 | socks5 | 47.242.19.215 | 8899 | 44 ms |
-| 20 | vmess | Z9FfBx3zs2q5O0BG.v.3dns.vip | 443 | 45 ms |
+| 1 | vmess | 112.132.215.108 | 50002 | 12 ms |
+| 2 | socks | 36.155.23.163 | 10808 | 14 ms |
+| 3 | vless | 42.236.73.72 | 443 | 22 ms |
+| 4 | http | 119.188.131.55 | 17981 | 24 ms |
+| 5 | vmess | sbgfgov.vip7.wogacnmnagfwgov.com | 11207 | 29 ms |
+| 6 | vmess | 120.48.133.162 | 10086 | 32 ms |
+| 7 | socks | 172.247.27.29 | 11080 | 32 ms |
+| 8 | vmess | sbgfgov.vip18.wogacnmnagfwgov.com | 11218 | 32 ms |
+| 9 | vmess | sbgfgov.vip5.wogacnmnagfwgov.com | 11205 | 33 ms |
+| 10 | vmess | fkvvg1cqrmv9qlcc.v.3dns.vip | 443 | 34 ms |
+| 11 | vmess | kneNaKHeSXnZH259.v.3dns.vip | 443 | 35 ms |
+| 12 | vmess | goldcnmltyljgfwgov.vip64.wogcnmnnagfwgov.com | 11264 | 35 ms |
+| 13 | vmess | xcWBH1Kr0wwfXG24.v.3dns.vip | 443 | 37 ms |
+| 14 | vmess | syJ2gGUgMwBwQwQx.v.3dns.vip | 443 | 38 ms |
+| 15 | vmess | ADncdOvLHR4M1P36.v.3dns.vip | 443 | 39 ms |
+| 16 | vmess | aZW0eunYVdvRe73k.v.3dns.vip | 443 | 39 ms |
+| 17 | http | 120.232.115.170 | 17981 | 39 ms |
+| 18 | http | fan.587475.xyz | 443 | 39 ms |
+| 19 | hysteria2 | 8.209.247.109 | 443 | 40 ms |
+| 20 | socks | 123.58.219.171 | 10808 | 40 ms |
