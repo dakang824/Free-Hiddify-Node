@@ -1,62 +1,62 @@
 # 可用节点清单
-> 自动生成 2026-10-21 12:05
-> 多源聚合 11 个公开源，实测可用 1594 个（34.1%）
+> 自动生成 2026-10-22 12:07
+> 多源聚合 11 个公开源，实测可用 2689 个（57.5%）
 
 ## 各源贡献
 
 | 源 | 解析节点数 |
 |---|---|
-| barry-far | 7634 |
-| ishalumi | 2173 |
+| barry-far | 7599 |
+| ishalumi | 2176 |
 | xingchaoet | 1756 |
-| Au1rxx | 1350 |
-| Ruk1ng001 | 489 |
-| free18 | 471 |
-| peasoft | 442 |
+| Au1rxx | 1599 |
+| free18 | 561 |
+| Ruk1ng001 | 497 |
+| peasoft | 457 |
 | ts-sf | 201 |
 | wanghaisheng | 141 |
-| snakem982 | 62 |
+| snakem982 | 63 |
 
 ## 可用协议分布
 
 | 协议 | 数量 |
 |---|---|
-| vless | 1021 |
-| http | 322 |
-| trojan | 154 |
-| shadowsocks | 42 |
-| vmess | 22 |
-| socks | 20 |
-| hysteria2 | 9 |
-| anytls | 2 |
-| socks5 | 2 |
+| vless | 1741 |
+| http | 314 |
+| trojan | 276 |
+| hysteria2 | 146 |
+| shadowsocks | 121 |
+| vmess | 64 |
+| socks | 25 |
+| tuic | 1 |
+| socks5 | 1 |
 
 ## 延迟分位
 
-- 中位数: 224 ms
-- p90: 308 ms
+- 中位数: 31 ms
+- p90: 222 ms
 
 ## 最快 20 个
 
 | # | 协议 | 服务器 | 端口 | 延迟 |
 |---|---|---|---|---|
-| 1 | http | 119.188.131.55 | 17981 | 23 ms |
-| 2 | vmess | 120.48.133.162 | 10086 | 33 ms |
-| 3 | vmess | kneNaKHeSXnZH259.v.3dns.vip | 443 | 34 ms |
-| 4 | vless | 123.111.169.70 | 443 | 34 ms |
-| 5 | socks | 47.243.173.50 | 11211 | 36 ms |
-| 6 | vless | 47.74.3.200 | 443 | 36 ms |
-| 7 | vmess | kBONDXW9liFCi4h4.v.3dns.vip | 443 | 37 ms |
-| 8 | vmess | Z9FfBx3zs2q5O0BG.v.3dns.vip | 443 | 37 ms |
-| 9 | socks | 123.58.219.171 | 10808 | 37 ms |
-| 10 | vless | 83.229.120.10 | 443 | 37 ms |
-| 11 | vmess | aZW0eunYVdvRe73k.v.3dns.vip | 443 | 38 ms |
-| 12 | vmess | kQov7UKaDknXb8a3.v.3dns.vip | 443 | 38 ms |
-| 13 | vless | 178.239.117.133 | 8443 | 38 ms |
-| 14 | vmess | syJ2gGUgMwBwQwQx.v.3dns.vip | 443 | 39 ms |
-| 15 | vless | 43.153.155.143 | 2053 | 39 ms |
-| 16 | http | fan.571589.xyz | 443 | 40 ms |
-| 17 | vmess | 8nTzyR5KNivfabaT.v.3dns.vip | 443 | 43 ms |
-| 18 | trojan | 123.140.124.25 | 2053 | 43 ms |
-| 19 | vmess | 120.232.202.14 | 8033 | 44 ms |
-| 20 | vless | www.lianchuang123.com | 443 | 44 ms |
+| 1 | hysteria2 | vpn-in-001.fastervpn.world | 443 | 24 ms |
+| 2 | vless | 95.154.196.61 | 443 | 24 ms |
+| 3 | hysteria2 | 179.61.138.145 | 443 | 24 ms |
+| 4 | vless | platform109.golnamakcert.top | 80 | 24 ms |
+| 5 | trojan | www.calmlunch.com | 443 | 24 ms |
+| 6 | trojan | 212.183.88.136 | 443 | 24 ms |
+| 7 | http | 185.219.159.16 | 443 | 24 ms |
+| 8 | vmess | www.shopify.com | 443 | 25 ms |
+| 9 | trojan | de3.dedushka.top | 443 | 25 ms |
+| 10 | vless | 104.18.35.15 | 443 | 25 ms |
+| 11 | vless | 59.125.69.23 | 443 | 25 ms |
+| 12 | vmess | guanwang.awsno.com | 443 | 25 ms |
+| 13 | vless | 163.128.99.36 | 443 | 25 ms |
+| 14 | hysteria2 | 46.229.243.149 | 8443 | 25 ms |
+| 15 | vless | 47.253.226.114 | 443 | 25 ms |
+| 16 | vless | 31.58.50.200 | 8443 | 25 ms |
+| 17 | vless | 89.125.147.199 | 443 | 25 ms |
+| 18 | vless | austria-2.moritech.net | 443 | 25 ms |
+| 19 | vless | 162.159.0.53 | 80 | 25 ms |
+| 20 | vless | 193.23.194.167 | 443 | 25 ms |
