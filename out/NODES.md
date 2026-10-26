@@ -1,61 +1,62 @@
 # 可用节点清单
-> 自动生成 2026-10-24 12:07
-> 多源聚合 11 个公开源，实测可用 2917 个（62.4%）
+> 自动生成 2026-10-26 12:05
+> 多源聚合 11 个公开源，实测可用 1550 个（33.1%）
 
 ## 各源贡献
 
 | 源 | 解析节点数 |
 |---|---|
-| barry-far | 7392 |
-| ishalumi | 2148 |
+| barry-far | 7968 |
+| ishalumi | 2021 |
 | xingchaoet | 1756 |
-| Au1rxx | 1559 |
+| Au1rxx | 1675 |
 | Ruk1ng001 | 490 |
-| peasoft | 401 |
-| free18 | 357 |
+| free18 | 454 |
+| peasoft | 380 |
 | ts-sf | 201 |
 | wanghaisheng | 141 |
 | free-nodes | 85 |
-| snakem982 | 64 |
+| snakem982 | 60 |
 
 ## 可用协议分布
 
 | 协议 | 数量 |
 |---|---|
-| vless | 1986 |
-| http | 319 |
-| shadowsocks | 305 |
-| trojan | 215 |
-| vmess | 42 |
-| hysteria2 | 35 |
-| socks | 15 |
+| vless | 1005 |
+| http | 265 |
+| trojan | 148 |
+| vmess | 56 |
+| shadowsocks | 36 |
+| socks | 27 |
+| hysteria2 | 11 |
+| anytls | 2 |
 
 ## 延迟分位
 
-- 中位数: 553 ms
-- p90: 790 ms
+- 中位数: 228 ms
+- p90: 303 ms
 
 ## 最快 20 个
 
 | # | 协议 | 服务器 | 端口 | 延迟 |
 |---|---|---|---|---|
-| 1 | trojan | 165.215.250.14 | 443 | 138 ms |
-| 2 | vless | 63.141.128.2 | 80 | 138 ms |
-| 3 | vless | 69.84.182.18 | 8080 | 138 ms |
-| 4 | vless | 104.16.75.207 | 443 | 138 ms |
-| 5 | vless | 104.21.16.1 | 80 | 138 ms |
-| 6 | vless | www.speedtest.net | 80 | 138 ms |
-| 7 | vless | 104.19.48.107 | 443 | 139 ms |
-| 8 | vless | 199.212.90.37 | 8443 | 139 ms |
-| 9 | vless | 160.153.137.128 | 2082 | 139 ms |
-| 10 | vless | 69.84.182.152 | 2095 | 139 ms |
-| 11 | vless | 104.21.32.1 | 443 | 139 ms |
-| 12 | vless | 185.207.198.186 | 2087 | 139 ms |
-| 13 | vless | 135.84.67.100 | 80 | 140 ms |
-| 14 | vless | 141.193.27.16 | 2087 | 140 ms |
-| 15 | vless | 192.169.223.16 | 2087 | 140 ms |
-| 16 | trojan | db-proxy-40d94f.staging-api-c21164.workers.dev | 8080 | 140 ms |
-| 17 | vless | 104.21.48.1 | 8080 | 140 ms |
-| 18 | vless | 45.67.215.233 | 443 | 141 ms |
-| 19 | vless | 141.193.27.4 | 80 | 141 ms |
-| 20 | vless | 198.62.62.50 | 2052 | 141 ms |
+| 1 | http | 118.25.131.160 | 10007 | 6 ms |
+| 2 | vmess | cf.877771.xyz | 443 | 7 ms |
+| 3 | vmess | 112.132.215.108 | 50002 | 18 ms |
+| 4 | vless | 42.236.73.72 | 443 | 22 ms |
+| 5 | vmess | 120.48.133.162 | 10086 | 31 ms |
+| 6 | http | 120.232.115.170 | 17981 | 34 ms |
+| 7 | vless | www.lianchuang123.com | 443 | 34 ms |
+| 8 | socks | 123.58.219.171 | 10808 | 35 ms |
+| 9 | vless | 43.153.181.217 | 443 | 35 ms |
+| 10 | socks | 47.242.19.215 | 8899 | 36 ms |
+| 11 | vless | 14.137.229.93 | 10007 | 36 ms |
+| 12 | vmess | kBONDXW9liFCi4h4.v.3dns.vip | 443 | 37 ms |
+| 13 | vmess | syJ2gGUgMwBwQwQx.v.3dns.vip | 443 | 37 ms |
+| 14 | vmess | kQov7UKaDknXb8a3.v.3dns.vip | 443 | 37 ms |
+| 15 | vmess | kneNaKHeSXnZH259.v.3dns.vip | 443 | 37 ms |
+| 16 | vmess | aZW0eunYVdvRe73k.v.3dns.vip | 443 | 38 ms |
+| 17 | vmess | 39.108.113.127 | 10086 | 38 ms |
+| 18 | socks | 47.243.173.50 | 11211 | 39 ms |
+| 19 | vless | 45.76.48.18 | 443 | 39 ms |
+| 20 | vless | 47.74.3.200 | 443 | 40 ms |
