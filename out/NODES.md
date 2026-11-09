@@ -1,62 +1,63 @@
 # 可用节点清单
-> 自动生成 2026-11-07 12:17
-> 多源聚合 11 个公开源，实测可用 980 个（21.0%）
+> 自动生成 2026-11-09 12:06
+> 多源聚合 11 个公开源，实测可用 1288 个（27.5%）
 
 ## 各源贡献
 
 | 源 | 解析节点数 |
 |---|---|
-| barry-far | 9269 |
-| ishalumi | 2053 |
+| barry-far | 8667 |
+| ishalumi | 1883 |
 | xingchaoet | 1756 |
 | Au1rxx | 1754 |
 | Ruk1ng001 | 494 |
-| peasoft | 356 |
-| free18 | 313 |
+| peasoft | 305 |
 | ts-sf | 201 |
 | wanghaisheng | 141 |
-| snakem982 | 50 |
+| free18 | 107 |
+| snakem982 | 57 |
 | free-nodes | 16 |
 
 ## 可用协议分布
 
 | 协议 | 数量 |
 |---|---|
-| vless | 666 |
-| http | 145 |
-| trojan | 109 |
-| shadowsocks | 22 |
+| vless | 763 |
+| http | 306 |
+| trojan | 143 |
+| shadowsocks | 26 |
+| socks | 17 |
+| vmess | 15 |
 | hysteria2 | 15 |
-| socks | 14 |
-| vmess | 8 |
+| socks5 | 2 |
 | anytls | 1 |
 
 ## 延迟分位
 
-- 中位数: 314 ms
-- p90: 1467 ms
+- 中位数: 223 ms
+- p90: 317 ms
 
 ## 最快 20 个
 
 | # | 协议 | 服务器 | 端口 | 延迟 |
 |---|---|---|---|---|
-| 1 | vless | saas.sin.fan | 2096 | 58 ms |
-| 2 | vless | 104.18.47.113 | 2082 | 60 ms |
-| 3 | vless | saas.sin.fan | 443 | 67 ms |
-| 4 | vless | jp.sofast.live | 52683 | 71 ms |
-| 5 | vless | 172.64.52.6 | 2086 | 72 ms |
-| 6 | vless | 172.64.52.6 | 2095 | 73 ms |
-| 7 | vless | 172.64.154.8 | 2086 | 74 ms |
-| 8 | vless | 172.64.229.2 | 2052 | 75 ms |
-| 9 | vless | 31.76.91.31 | 443 | 77 ms |
-| 10 | shadowsocks | 43.201.116.22 | 443 | 77 ms |
-| 11 | vless | 1password.com | 443 | 77 ms |
-| 12 | http | 183.179.162.50 | 443 | 79 ms |
-| 13 | vless | 104.21.94.161 | 443 | 80 ms |
-| 14 | vless | saas.sin.fan | 2053 | 81 ms |
-| 15 | trojan | 104.25.240.193 | 443 | 82 ms |
-| 16 | vless | saas.sin.fan | 2087 | 82 ms |
-| 17 | vless | chat.deepseek.com | 80 | 83 ms |
-| 18 | vless | 104.17.50.53 | 443 | 85 ms |
-| 19 | vless | 172.64.53.55 | 2095 | 86 ms |
-| 20 | vless | 172.64.154.8 | 2052 | 90 ms |
+| 1 | socks | 58.32.16.138 | 7000 | 13 ms |
+| 2 | vmess | 39.108.113.127 | 10086 | 33 ms |
+| 3 | vmess | 120.48.133.162 | 10086 | 33 ms |
+| 4 | hysteria2 | 8.209.247.109 | 443 | 34 ms |
+| 5 | socks | 47.243.173.50 | 11211 | 36 ms |
+| 6 | vless | 43.254.166.147 | 443 | 36 ms |
+| 7 | http | 120.232.204.58 | 31343 | 37 ms |
+| 8 | socks | 8.209.236.192 | 1080 | 37 ms |
+| 9 | socks5 | 47.76.229.132 | 11310 | 39 ms |
+| 10 | socks | 47.242.19.215 | 8899 | 41 ms |
+| 11 | anytls | tw.ccwink.cc | 6549 | 43 ms |
+| 12 | http | 120.232.204.58 | 40583 | 43 ms |
+| 13 | http | fan.571589.xyz | 443 | 43 ms |
+| 14 | http | 183.179.162.50 | 443 | 43 ms |
+| 15 | vless | 45.94.40.153 | 8443 | 47 ms |
+| 16 | vless | 199.232.255.58 | 443 | 50 ms |
+| 17 | trojan | 103.133.240.115 | 443 | 55 ms |
+| 18 | vmess | planb.mojcn.com.linuxlh.xin | 16632 | 56 ms |
+| 19 | vmess | t.cnmjcn.cyou | 16632 | 58 ms |
+| 20 | trojan | ddrr2.tube-cat.com | 45630 | 67 ms |
