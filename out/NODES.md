@@ -1,62 +1,63 @@
 # 可用节点清单
-> 自动生成 2026-11-13 12:05
-> 多源聚合 11 个公开源，实测可用 1087 个（23.2%）
+> 自动生成 2026-11-14 12:10
+> 多源聚合 11 个公开源，实测可用 932 个（19.9%）
 
 ## 各源贡献
 
 | 源 | 解析节点数 |
 |---|---|
-| barry-far | 9222 |
-| ishalumi | 2141 |
+| barry-far | 5648 |
+| ishalumi | 1858 |
 | xingchaoet | 1756 |
 | Au1rxx | 1754 |
-| free18 | 444 |
-| peasoft | 409 |
+| free18 | 427 |
+| peasoft | 336 |
 | ts-sf | 201 |
 | wanghaisheng | 141 |
-| Ruk1ng001 | 92 |
-| snakem982 | 56 |
-| free-nodes | 16 |
+| Ruk1ng001 | 89 |
+| snakem982 | 59 |
+| free-nodes | 29 |
 
 ## 可用协议分布
 
 | 协议 | 数量 |
 |---|---|
-| vless | 784 |
-| trojan | 128 |
-| http | 112 |
-| shadowsocks | 30 |
-| hysteria2 | 11 |
-| socks | 10 |
-| vmess | 10 |
-| socks5 | 2 |
+| vless | 643 |
+| trojan | 133 |
+| http | 78 |
+| shadowsocks | 31 |
+| vmess | 21 |
+| hysteria2 | 13 |
+| socks | 9 |
+| anytls | 3 |
+| socks5 | 1 |
 
 ## 延迟分位
 
-- 中位数: 226 ms
-- p90: 359 ms
+- 中位数: 258 ms
+- p90: 554 ms
 
 ## 最快 20 个
 
 | # | 协议 | 服务器 | 端口 | 延迟 |
 |---|---|---|---|---|
-| 1 | trojan | 118.253.167.243 | 59443 | 31 ms |
-| 2 | trojan | tyy129.magiclampcloud.com | 59443 | 32 ms |
-| 3 | vless | 103.42.180.146 | 443 | 34 ms |
-| 4 | vless | 64.83.51.119 | 443 | 34 ms |
-| 5 | vless | chat.deepseek.com | 80 | 36 ms |
-| 6 | socks5 | 47.242.19.215 | 8899 | 37 ms |
-| 7 | trojan | 20.210.234.145 | 443 | 37 ms |
-| 8 | http | 120.232.204.58 | 40583 | 38 ms |
-| 9 | vless | 64.83.37.223 | 443 | 38 ms |
-| 10 | vless | 154.36.156.220 | 443 | 38 ms |
-| 11 | vless | 154.36.183.110 | 443 | 38 ms |
-| 12 | vless | 64.83.36.18 | 443 | 39 ms |
-| 13 | vless | proxy.aliproxy.cc.cd | 6666 | 41 ms |
-| 14 | vless | 60.248.219.53 | 443 | 56 ms |
-| 15 | vless | 3.169.9.125 | 443 | 59 ms |
-| 16 | vless | 154.36.155.12 | 443 | 59 ms |
-| 17 | vless | 154.36.154.29 | 443 | 62 ms |
-| 18 | vless | 59.125.69.19 | 443 | 71 ms |
-| 19 | shadowsocks | 54.254.129.246 | 443 | 81 ms |
-| 20 | vless | 38.47.96.220 | 11424 | 84 ms |
+| 1 | http | 118.184.140.90 | 58764 | 29 ms |
+| 2 | trojan | ja262.magiclampcloud.cn | 59443 | 49 ms |
+| 3 | socks5 | 43.133.21.24 | 3001 | 50 ms |
+| 4 | vmess | 39.108.113.127 | 10086 | 51 ms |
+| 5 | trojan | sclass-b1.catcat321.com | 20028 | 56 ms |
+| 6 | vless | 172.64.229.2 | 2086 | 57 ms |
+| 7 | vmess | cdn.sfacg.uk | 2083 | 59 ms |
+| 8 | trojan | tyy129.magiclampcloud.com | 59443 | 59 ms |
+| 9 | vless | 172.64.53.55 | 2095 | 60 ms |
+| 10 | trojan | sclass-b1.catcat321.com | 20027 | 60 ms |
+| 11 | vless | 172.64.229.170 | 8080 | 62 ms |
+| 12 | vless | saas.sin.fan | 443 | 63 ms |
+| 13 | socks | 47.76.186.28 | 11408 | 64 ms |
+| 14 | vless | 156.59.125.66 | 443 | 64 ms |
+| 15 | vless | 60.248.219.53 | 443 | 66 ms |
+| 16 | vless | 3.169.9.125 | 443 | 69 ms |
+| 17 | vless | bet.tunetworkin.online | 443 | 70 ms |
+| 18 | vless | chat.deepseek.com | 80 | 70 ms |
+| 19 | vless | zfapi.zalolink.com | 47691 | 74 ms |
+| 20 | vless | www.codex2api.com | 443 | 74 ms |
