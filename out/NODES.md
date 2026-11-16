@@ -1,63 +1,63 @@
 # 可用节点清单
-> 自动生成 2026-11-14 12:10
-> 多源聚合 11 个公开源，实测可用 932 个（19.9%）
+> 自动生成 2026-11-16 12:07
+> 多源聚合 11 个公开源，实测可用 1685 个（36.0%）
 
 ## 各源贡献
 
 | 源 | 解析节点数 |
 |---|---|
-| barry-far | 5648 |
-| ishalumi | 1858 |
-| xingchaoet | 1756 |
+| barry-far | 4703 |
+| ishalumi | 2026 |
 | Au1rxx | 1754 |
-| free18 | 427 |
-| peasoft | 336 |
+| peasoft | 331 |
 | ts-sf | 201 |
+| free18 | 153 |
 | wanghaisheng | 141 |
-| Ruk1ng001 | 89 |
-| snakem982 | 59 |
-| free-nodes | 29 |
+| Ruk1ng001 | 92 |
+| snakem982 | 54 |
+| free-nodes | 21 |
+| xingchaoet | 17 |
 
 ## 可用协议分布
 
 | 协议 | 数量 |
 |---|---|
-| vless | 643 |
-| trojan | 133 |
-| http | 78 |
-| shadowsocks | 31 |
-| vmess | 21 |
-| hysteria2 | 13 |
-| socks | 9 |
+| vless | 1076 |
+| trojan | 260 |
+| hysteria2 | 115 |
+| shadowsocks | 111 |
+| http | 53 |
+| socks | 40 |
+| vmess | 26 |
 | anytls | 3 |
 | socks5 | 1 |
 
 ## 延迟分位
 
-- 中位数: 258 ms
-- p90: 554 ms
+- 中位数: 31 ms
+- p90: 211 ms
 
 ## 最快 20 个
 
 | # | 协议 | 服务器 | 端口 | 延迟 |
 |---|---|---|---|---|
-| 1 | http | 118.184.140.90 | 58764 | 29 ms |
-| 2 | trojan | ja262.magiclampcloud.cn | 59443 | 49 ms |
-| 3 | socks5 | 43.133.21.24 | 3001 | 50 ms |
-| 4 | vmess | 39.108.113.127 | 10086 | 51 ms |
-| 5 | trojan | sclass-b1.catcat321.com | 20028 | 56 ms |
-| 6 | vless | 172.64.229.2 | 2086 | 57 ms |
-| 7 | vmess | cdn.sfacg.uk | 2083 | 59 ms |
-| 8 | trojan | tyy129.magiclampcloud.com | 59443 | 59 ms |
-| 9 | vless | 172.64.53.55 | 2095 | 60 ms |
-| 10 | trojan | sclass-b1.catcat321.com | 20027 | 60 ms |
-| 11 | vless | 172.64.229.170 | 8080 | 62 ms |
-| 12 | vless | saas.sin.fan | 443 | 63 ms |
-| 13 | socks | 47.76.186.28 | 11408 | 64 ms |
-| 14 | vless | 156.59.125.66 | 443 | 64 ms |
-| 15 | vless | 60.248.219.53 | 443 | 66 ms |
-| 16 | vless | 3.169.9.125 | 443 | 69 ms |
-| 17 | vless | bet.tunetworkin.online | 443 | 70 ms |
-| 18 | vless | chat.deepseek.com | 80 | 70 ms |
-| 19 | vless | zfapi.zalolink.com | 47691 | 74 ms |
-| 20 | vless | www.codex2api.com | 443 | 74 ms |
+| 1 | vless | 140.225.199.241 | 443 | 24 ms |
+| 2 | vless | 208.85.21.89 | 443 | 24 ms |
+| 3 | vless | 85.90.217.42 | 443 | 24 ms |
+| 4 | vless | rvg-sfi63g.fly.dev | 443 | 24 ms |
+| 5 | vless | 169.40.42.35 | 443 | 25 ms |
+| 6 | vless | 195.123.240.65 | 443 | 25 ms |
+| 7 | vless | 5.149.249.94 | 443 | 25 ms |
+| 8 | vless | 86.54.28.75 | 443 | 25 ms |
+| 9 | trojan | 216.152.147.79 | 443 | 25 ms |
+| 10 | hysteria2 | 51.15.19.206 | 8443 | 25 ms |
+| 11 | hysteria2 | 138.2.89.249 | 443 | 25 ms |
+| 12 | shadowsocks | 47.245.173.25 | 443 | 25 ms |
+| 13 | http | 149.34.248.65 | 443 | 25 ms |
+| 14 | vless | barbered-mattocks.video-streams.org | 443 | 25 ms |
+| 15 | vless | 144.31.215.48 | 443 | 25 ms |
+| 16 | vless | 23.88.47.215 | 443 | 25 ms |
+| 17 | shadowsocks | 3.112.175.20 | 443 | 25 ms |
+| 18 | shadowsocks | 71.19.148.74 | 443 | 25 ms |
+| 19 | trojan | 188.114.98.0 | 443 | 25 ms |
+| 20 | vless | 159.195.247.169 | 443 | 25 ms |
